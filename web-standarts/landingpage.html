@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treina Vale - Sua Jornada para uma Vida Saudável</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #fff;
+        }
+
+        header {
+            background-color: #0077cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-out;
+        }
+
+        h2 {
+            color: #0077cc;
+        }
+
+        p {
+            color: #bbb;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #0077cc;
+            border-radius: 5px;
+            background-color: #444;
+            color: #fff;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #0077cc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .carousel-container {
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .carousel {
+            display: flex;
+            animation: slide 10s;
+        }
+
+        .carousel img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            25% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            100% { transform: translateX(0%); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media screen and (max-width: 600px) {
+            section {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Treina Vale - Sua Jornada para uma Vida Saudável</h1>
+    </header>
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="1.jpg" alt="Imagem 1">
+            <img src="2.webp" alt="Imagem 2">
+            <img src="3.jpg" alt="Imagem 3">
+        </div>
+    </div>
+
+    <section>
+        <h2>Conquiste Seus Objetivos de Saúde e Fitness</h2>
+        <p>Nossos treinadores especializados estão prontos para guiá-lo em sua jornada para uma vida mais saudável.</p>
+
+        <h2>O que Oferecemos</h2>
+        <p>
+            - Treinamento Personalizado<br>
+            - Planos de Nutrição Personalizados<br>
+            - Acompanhamento Contínuo e Suporte<br>
+            - Resultados Garantidos
+        </p>
+
+        <h2>Vantagens e Benefícios</h2>
+        <p>
+            - Treinos Flexíveis<br>
+            - Foco em Resultados Tangíveis<br>
+            - Abordagem Personalizada<br>
+            - Atendimento Online ou Presencial
+        </p>
+
+        <h2>Entre em Contato</h2>
+        <p>Preencha o formulário abaixo e começaremos sua jornada juntos!</p>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu Email" required>
+            <textarea placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+</body>
+</html>
